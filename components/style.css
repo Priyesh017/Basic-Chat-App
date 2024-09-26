@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.nav {
+  background: black;
+  height: 70px;
+}
+.logo {
+  display: block;
+  position: relative;
+  top: -10px;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  filter: invert(1);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 70px);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  /* border: 2px solid white; */
+  background-image: linear-gradient(rgb(92, 100, 221), purple);
+  z-index: 1;
+}
+.message {
+  background-color: silver;
+  padding: 10px;
+  margin: 17px 12px;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  outline: none;
+  font-family: cursive;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  clear: both;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  clear: both;
+}
+.middle {
+  text-align: center;
+  font-size: 13px;
+}
+.middle .message {
+  border: none !important;
+  background: transparent !important;
+}
+.send {
+  width: 100%;
+  /* padding: 12px; */
+  background: #000;
+  z-index: 3;
+}
+#send-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+#msgInp {
+  width: 50%;
+  padding: 10px;
+  border: 2px solid rgb(234, 0, 255);
+  border-radius: 20px;
+  outline: none;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn {
+  width: 120px;
+  cursor: pointer;
+  border: 2px solid rgb(234, 0, 255);
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(255, 0, 217, 0);
+}
